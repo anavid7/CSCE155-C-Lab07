@@ -31,14 +31,10 @@ void printArray(const int *arr, int size) {
 
 double getMean(int *arr, int size ) {
   double sum = 0;
-  double result = 0;
-  for (i = 0; i < size; i++) {
-    sum += arr[i];
-  }
-
-result = sum / size;
-
-return result;
+    for (i = 0; i < size; i++) {
+      sum += arr[i];
+    }
+  return sum / size;
 }
 
 int getMin(int *arr, int size) {

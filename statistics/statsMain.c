@@ -23,19 +23,20 @@ int main(int argc, char** argv) {
     printf("ERROR: program does not support that many integers!");
 	  exit(1);
 	}
+  int arr[500];
 
-	//TODO: declare a static array "large enough" to hold as many integers as we'll need
 
 	//TODO (Activity 3): change your delcaration and initialization to use
 	// a dynamic array and malloc instead
 
-	//TODO: pass the appropriate variable
-	readInArray(, size);
 
-	//TODO: pass the appropriate variables to your functions here
-  min = getMin( , );
-  max = getMax( , );
-  mean = getMean( , );
+
+	readInArray(int *arr, int size);
+
+
+  min = getMin(int *arr, int size);
+  max = getMax(int *arr, int size);
+  mean = getMean(int *arr, int size);
   printArray( , );
 
   printf("Min: %d\n", min);
@@ -43,4 +44,5 @@ int main(int argc, char** argv) {
   printf("Mean: %.2f\n", mean);
 
   return 0;
+
 }
