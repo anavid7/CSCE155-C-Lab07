@@ -5,6 +5,7 @@
  * provided array must be properly initialized for this function
  * to work.
  */
+
 void readInArray(int *arr, int size);
 
 /**

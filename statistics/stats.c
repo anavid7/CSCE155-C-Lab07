@@ -26,12 +26,12 @@ void printArray(const int *arr, int size) {
   for(int i=0; i<size-1; i++) {
     printf("%d, ", arr[i]);
   }
-  printf("%d ]\n ", arr[size-1]);
+  printf("%d ]", arr[size-1]);
 }
 
 double getMean(int *arr, int size ) {
   double sum = 0;
-    for (i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) {
       sum += arr[i];
     }
   return sum / size;
@@ -40,7 +40,7 @@ double getMean(int *arr, int size ) {
 int getMin(int *arr, int size) {
 
 double minimum = arr[0];
-  for (i = 1; i < size; i++) {
+  for (int i = 1; i < size; i++) {
     if (arr[i] < minimum) {
       minimum = arr[i];
     }
@@ -50,7 +50,7 @@ return minimum;
 
 int getMax( int *arr, int size) {
   double maximum = arr[0];
-  for (i = 1; i < size; i++) {
+  for (int i = 1; i < size; i++) {
     if (arr[i] > maximum) {
       maximum = arr[i];
     }

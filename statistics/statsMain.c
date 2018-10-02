@@ -3,8 +3,9 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "stats.h"
+#include <time.h>
+
 
 #define SIZE 500
 
@@ -19,7 +20,7 @@ int main(int argc, char** argv) {
   printf("Enter the amount of numbers you'd like to find the stats for: ");
   scanf("%d", &size);
 
-  if(size > MAX_SIZE) {
+  if(size > SIZE) {
     printf("ERROR: program does not support that many integers!");
 	  exit(1);
 	}
@@ -31,13 +32,13 @@ int main(int argc, char** argv) {
 
 
 
-	readInArray(int *arr, int size);
+	readInArray(arr, size);
 
 
-  min = getMin(int *arr, int size);
-  max = getMax(int *arr, int size);
-  mean = getMean(int *arr, int size);
-  printArray( , );
+  min = getMin(arr, size);
+  max = getMax(arr, size);
+  mean = getMean(arr, size);
+//  printArray( , );
 
   printf("Min: %d\n", min);
   printf("Max: %d\n", max);

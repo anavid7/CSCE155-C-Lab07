@@ -21,6 +21,7 @@ int main(int argc, char** argv) {
     int * randomArray = generateRandomArray(size);
     int medianValue = findMedian(randomArray, size);
     printf("The median element of the randomly generated array is %d\n", medianValue);
+    free(randomArray);
   }
 
   return 0;
